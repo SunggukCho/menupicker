@@ -1,5 +1,4 @@
-<h1>점심 메뉴 고민고민하지마~</h1>
-<%= @random_pick %>
+
 
 <p id="notice"><%= notice %></p>
 
@@ -19,9 +18,9 @@
       <tr>
         <td><%= menu.title %></td>
         <td><%= menu.content %></td>
-        <td><%= link_to 'Show', menu %></td>
-        <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
-        <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '보기', menu %></td>
+        <td><%= link_to '편집', edit_menu_path(menu) %></td>
+        <td><%= link_to '삭제', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,3 +29,5 @@
 <br>
 
 <%= link_to 'New Menu', new_menu_path %>
+<br>
+<%= link_to '메뉴돌리러 ㄱㄱ', root_path %>
